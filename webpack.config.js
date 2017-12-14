@@ -19,7 +19,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'react-redux-routes-antd',
+            title: 'router',
             template: './entry/index.ejs'
         }),
         /*new webpack.DefinePlugin({    //全局变量
@@ -29,19 +29,19 @@ module.exports = {
 
     module: {
         rules: [
-            /*{
+            {
                 test: /\.css$/,
                 use: [
                     "style-loader",
                     "css-loader"
                 ]
-            },*/
+            },
             {
                 test: /\.js|jsx$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
             },
-            /*{
+            {
                 test: /\.less$/,
                 use: [{
                     loader: "style-loader" // creates style nodes from JS strings
@@ -50,8 +50,8 @@ module.exports = {
                 }, {
                     loader: "less-loader" // compiles Less to CSS
                 }]
-            },*/
-            /*{
+            },
+            {
                 test: /\.(png|jpg|jpeg|gif)$/,
                 use: [
                     {
@@ -61,7 +61,7 @@ module.exports = {
                         }
                     }
                 ]
-            }*/
+            }
 
         ]
     },

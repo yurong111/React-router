@@ -1,5 +1,6 @@
 import Login from 'bundle-loader?lazy&name=app-Home!../view/Login'
 import Home from 'bundle-loader?lazy&name=app-Home!../view/Home'
+import Mini from 'bundle-loader?lazy&name=app-Home!../view/Mimi'
 import AboutUs from 'bundle-loader?lazy&name=app-AboutUs!../view/AboutUs'
 
 const routes = [{
@@ -9,6 +10,10 @@ const routes = [{
         {
             path: '/login',
             component: Login,
+        },
+        {
+            path: '/mini',
+            component: Mini,
         },
         {
             path: '/aboutUs',
